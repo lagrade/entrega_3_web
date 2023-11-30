@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block cambio %}
+
+<p>Nuestros cursos son:<br>
+{% for curso in cursos%}
+
+<h6>Curso: {{curso.nombre}} Duración: {{curso.clases}} clases</h6>
+{% endfor%}
+
+
+</p>
+
+{% endblock%}
