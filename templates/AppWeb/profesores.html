@@ -1,4 +1,8 @@
 {% extends 'index.html' %}
 
 {% block cambio %}
-{% endblock%}
+{% for p in profesores %}
+      <li>{{p}}</li>
+{% endfor %}
+
+{% endblock %}

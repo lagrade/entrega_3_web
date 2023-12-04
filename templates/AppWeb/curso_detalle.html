@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+
+{% block cambio %}
+ <p>El nombre del curos es: <b>{{curso.nombre}}</b></p>
+<p>
+    <a href="{% url 'listacursos'%}"></a>
+</p>
+
+
+{% endblock%}

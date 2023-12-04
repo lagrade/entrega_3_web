@@ -1,9 +1,11 @@
 <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
                 <a class="navbar-brand" href="/app/inicio/">inicio</a>
-                 <a class="navbar-brand" href="/app/cursos">Cursos</a>
-                 <a class="navbar-brand" href="/app/curso/"> Carreras</a>
-                 <a class="navbar-brand" href="/app/cursos/">Profesores</a>
+                 <a class="navbar-brand" href="{% url 'listacursos' %}">Cursos</a>
+                 <a class="navbar-brand" href="/app/carreras/"> Carreras</a>
+                 <a class="navbar-brand" href="{% url 'leerprofesores'%}">Profesores</a>
+                 <a class="navbar-brand" href="/app/agregar-profesor/">Registrar Profesor</a>
+
                  <a class="navbar-brand" href="/app/agregar/">Agregar</a>
 
                 <a class="btn btn-primary" href="#signup">{{nombre}}</a>

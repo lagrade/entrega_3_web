@@ -1,4 +1,15 @@
 {% extends 'index.html' %}
 
 {% block cambio %}
+
+<p>Nuestras carreras :<br>
+{% for carrera in carreras%}
+
+<h6>-Carrera: {{carrera.nombre}} -Modulos: {{carrera.modulos}} clases</h6>
+<hr>
+{% endfor%}
+
+
+</p>
+
 {% endblock%}

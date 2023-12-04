@@ -4,7 +4,9 @@
 <h4>Buscar curso:</h4>
 <div>
     <form action="/app/buscar/" method="GET">
-        {{form.as_p}}
+
+        <input type="text" value="Curso">
+
         <input type="submit" value="Buscar">
 
 
@@ -12,7 +14,7 @@
 </div>
 <hr>
 <p><h2>Nuestros cursos :</h2><br>
-{% for curso in cursos%}
+{% for curso in object_list %}
 
 <h6>-Curso: {{curso.nombre}} -Duración: {{curso.clases}} clases</h6>
 <hr>
